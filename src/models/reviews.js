@@ -1,11 +1,8 @@
 'use strict';
 
 var mongoose = require('mongoose');
-var User = require('./users');
 
-var Schema = mongoose.Schema
-
-var ReviewSchema = new Schema({
+var ReviewSchema = new mongoose.Schema({
   user: {
     type: mongoose.Schema.Types.ObjectId,
     ref: 'User'
